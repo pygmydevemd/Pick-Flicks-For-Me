@@ -1,54 +1,116 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="featured_movies.js"></script>
+    <link type="text/css" rel="stylesheet" href="home.css">
     <meta charset="UTF-8">
     <title>Pick Flicks For ME- A place to find a movie to watch.</title>
 </head>
 <body>
-<div class="top line">
+<div id="info">
     <ul>
         <li id="email">Contact us at: pygmydevemd@gmail.com</li>
-        <li id="twitter">Put link to twitter here</li>
-        <li id="github">Put github link here</li>
-        <li id="google">Put google + link here</li>
+        <li id="twitter">twitter </li>
+        <li id="github">github</li>
+        <li id="google">google</li>
     </ul>
 </div>
     <div class="main">
-        <div id="logo">Where logo should go</div>
+        <div id="logo"><a href=""><img src="logo/pickflickslogo.png"></a></div>
             <div id="buttons">
                 <ul>
                     <li id="home">Home</li>
-                    <li id="about-us">About Us</li>
-                    <li id="price-tool">Price Tool</li>
-                    <li id="movie-day">Movie of the Day</li>
+                    <li id="about">About Us</li>
+                    <li id="pricing">Price Tool</li>
+                    <li id="movie">Movie of the Day</li>
                     <li id="contact">Contact Us</li>
                  </ul>
             </div>
     </div>
-<div class="banner">
-    <div id="welcome">
-        <h3>Welcome to Pick Flicks For ME!</h3>
-        <p>Our goal is to find you a movie in just a few quick steps. The Movie Finder Service aims to find you a movie based on your mood and the occasion, not based on taste.</p>
+<div class="sliders">
+    <!-- Home slide, shows welcome along with who we use to give prices and show movies -->
+    <div class="slide active-slide">
+        <div class="slide-container">
+            <div class="slide-text">
+        <h2>Welcome to Pick Flicks For ME!</h2>
+        <p>Our goal is to find you a movie in just a few quick steps.The Movie Finder Service aims to find you a movie based on your mood and the occasion, not based on taste.</p>
+            </div>
+        </div>
     </div>
-    <div id="price">
+    <!-- end of first slide -->
+    <!-- start of next slide, will present pricing tool -->
+    <div class="slide">
+        <div class="slide-container">
+            <div class="slide-text">
         <h3>Price Comparison</h3>
          <p>Use our Price Comparison Tool to find the best deal on your favourite movie!</p>
+            </div>
+            <div class="slide-photo">
+                <ul class="providers">
+                    <li><a href="#"></a>Walmart</li>
+                    <li><a href="#"></a>Target</li>
+                    <li><a href="#"></a>Amazon</li>
+                    <li><a href="#"></a>Target Ticket</li>
+                    <li><a href="#"></a>Flixster</li>
+                    <li><a href="#"></a>Vudu</li>
+                </ul>
+            </div>
+         </div>
     </div>
-    <div id="motd">
+    <!-- end of second slide -->
+    <!-- start of third slide -->
+    <div class="slide">
+        <div class="slide-container">
+            <div class="slide-text">
         <h3>Movie of the Day!</h3>
         <p>Enjoy Pick Flicks for ME's Movie of the Day!</p>
+            </div>
+            <div class="slide-photo"><!--inside here is where the movie poster for the MOTD will go, and clicking the poster
+            will link you to the pricing tool for that movie --></div>
+        </div>
     </div>
-    <div id="suggest">
+    <!-- end of third slide -->
+    <!-- start of last slide -->
+    <div class="slide">
+        <div class="slide-container">
+            <div class="slide-text">
         <h3>Contact Us</h3>
         <p>Have a suggestion? Let us know if there is any way we can improve our site and make it better for you!</p>
+            </div>
+        </div>
     </div>
 </div>
-<div class="quick-picks">
-    <h2>Today's Quick Picks!</h2>
-    <div id="pick-one">Pick One</div>
-    <div id="pick-two">Pick Two</div>
-    <div id="pick-three">Pick Three</div>
+    <!-- end of last slide -->
+<!-- feature titles jQuery tool below here -->
+<div class="container"><h1>Featured Titles!</h1>
+    <br>
+    <div class="poster-container">
+        <div class="poster">
+            <a href=""><img src="Movie Posters/pulpfiction.jpg"></a>
+        </div>
+    </div>
+    <div class="poster-container">
+        <div class="poster">
+            <a href=""><img src="Movie Posters/interview.jpg"></a>
+        </div>
+    </div>
+    <div class="poster-container">
+        <div class="poster">
+            <a href=""><img src="Movie Posters/boxtrolls.jpg"></a>
+        </div>
+    </div>
+    <div class="poster-container">
+        <div class="poster">
+            <a href=""><img src="Movie Posters/equalizer.jpg"></a>
+        </div>
+    </div>
+    <div class="poster-container active">
+        <div class="poster">
+            <a href=""><img src="Movie Posters/catchingfire.jpg"></a>
+        </div>
+    </div>
+    <div class="clearfix"></div>
 </div>
-
 </body>
 </html>
