@@ -3,7 +3,9 @@
 <head lang="en">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="featured_movies.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
     <link type="text/css" rel="stylesheet" href="home.css">
+    <script src="banner_slides.js"></script>
     <meta charset="UTF-8">
     <title>Pick Flicks For ME- A place to find a movie to watch.</title>
 </head>
@@ -33,8 +35,13 @@
     <div class="slide active-slide">
         <div class="slide-container">
             <div class="slide-text">
-        <h2>Welcome to Pick Flicks For ME!</h2>
-        <p>Our goal is to find you a movie in just a few quick steps.The Movie Finder Service aims to find you a movie based on your mood and the occasion, not based on taste.</p>
+                <div id="welcome">
+        <h1>Welcome To</h1>
+        <h2>Pick Flicks For Me!</h2>
+        <p>Looking for a movie to watch? Don't bother searching through thousands of movies trying to find something good!
+        Let us do the searching for you! Using our Movie Finder service, we ask you a handful of simple questions, and then
+        suggest an awesome movie for you to watch.</p>
+                </div>
             </div>
         </div>
     </div>
@@ -43,7 +50,7 @@
     <div class="slide">
         <div class="slide-container">
             <div class="slide-text">
-        <h3>Price Comparison</h3>
+        <h1>Price Comparison</h1>
          <p>Use our Price Comparison Tool to find the best deal on your favourite movie!</p>
             </div>
             <div class="slide-photo">
@@ -63,7 +70,7 @@
     <div class="slide">
         <div class="slide-container">
             <div class="slide-text">
-        <h3>Movie of the Day!</h3>
+        <h1>Movie of the Day!</h1>
         <p>Enjoy Pick Flicks for ME's Movie of the Day!</p>
             </div>
             <div class="slide-photo"><!--inside here is where the movie poster for the MOTD will go, and clicking the poster
@@ -75,13 +82,25 @@
     <div class="slide">
         <div class="slide-container">
             <div class="slide-text">
-        <h3>Contact Us</h3>
+        <h1>Contact Us</h1>
         <p>Have a suggestion? Let us know if there is any way we can improve our site and make it better for you!</p>
             </div>
         </div>
     </div>
 </div>
     <!-- end of last slide -->
+    <!-- buttons for slides -->
+<div class="slider-nav">
+    <a href="#" class="arrow-prev"><img src="arrows/icon-arrow-left.png"></a>
+        <ul class="slider-dots">
+            <li class="dot active-dot">&bull;</li>
+            <li class="dot">&bull;</li>
+            <li class="dot">&bull;</li>
+            <li class="dot">&bull;</li>
+        </ul>
+    <a href="#" class="arrow-next"><img src="arrows/icon-arrow-right.png"></a>
+</div>
+    <!-- end of dots -->
 <!-- feature titles jQuery tool below here -->
 <div class="container"><h1>Featured Titles!</h1>
     <br>
@@ -110,7 +129,6 @@
             <a href=""><img src="Movie Posters/catchingfire.jpg"></a>
         </div>
     </div>
-    <div class="clearfix"></div>
 </div>
 </body>
 </html>
