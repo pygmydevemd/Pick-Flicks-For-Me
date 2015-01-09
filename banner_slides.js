@@ -6,7 +6,7 @@ var main = function() {
         var currentSlide = $('.active-slide');
         var nextSlide = currentSlide.next();
 
-        var currentDot = $('active-dot');
+        var currentDot = $('.active-dot');
         var nextDot = currentDot.next();
 
         if(nextSlide.length === 0) {
